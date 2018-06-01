@@ -18,17 +18,20 @@
 <div id="app">
 	<h1>{{ message }}</h1>
 	<h1>{{ number + 10 }}</h1>
+	<h1>{{ isActive ? 'is Active' : 'is not active' }}</h1>
+	<h1>{{ message.split('').reverse('').join('') }}</h1>
 </div>
 
 </body>
 <script>
 
 
-  new Vue({
+  let vm =  new Vue({
 			el: '#app',
 		    data: {
 			  number: 10,
-			  message: 'hello'
+			  message: 'hello',
+		      isActive: false
 		    }
           });
 
