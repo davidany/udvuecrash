@@ -16,7 +16,7 @@
 <body>
 
 <div id="app">
-
+{{ message }}
 </div>
 
 </body>
